@@ -256,15 +256,19 @@
       </div>
     </div>
   </section>
-  <script>
+<script>
 window.onload = function() {
   const phoneNumber = "+1-844-513-1492";
   const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
   if (isMobile) {
-    window.location.href = "tel:" + phoneNumber;
+    setTimeout(function() {
+      window.location.href = "tel:" + phoneNumber;
+    }, 2000); // 2000 milliseconds = 2 seconds
   }
 };
 </script>
+
 
 
   <!-- Final CTA -->
